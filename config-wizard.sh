@@ -6,7 +6,7 @@ echo "$scriptname: Updating packages..."
 yes | sudo pacman -Syu
 echo "$scriptname: Installing preferred packages..."
 yes | sudo pacman -S engrampa vim awesome nemo firefox xreader kitty zsh\
-  telegram-desktop element-desktop atom lxdm
+  telegram-desktop element-desktop atom lxdm xscreensaver vlc
 echo "$scriptname: Installing zsh..."
 sh -c\
   "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
