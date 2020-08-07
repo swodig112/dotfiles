@@ -9,7 +9,7 @@ sudo pacman -S --noconfirm --needed engrampa vim awesome nemo firefox xreader\
   kitty zsh telegram-desktop element-desktop atom lxdm xscreensaver vlc
 echo "$scriptname: Installing ohmyzsh..."
 sh -c\
-  "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" && true
 echo "$scriptname: Installing atom editor packages..."
 apm install seti-ui seti-syntax script process-palette atydom-ide-terminal\
   Hydrogen file-icons language-markdown markdown-scroll-sync markdown-writer\
