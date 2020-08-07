@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-scriptname="swodig-config-wizard"
+scriptname="config-wizard"
 echo "$scriptname: Updating packages..."
 sudo pacman -Syu --noconfirm
 echo "$scriptname: Installing preferred packages..."
