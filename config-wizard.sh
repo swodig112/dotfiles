@@ -3,9 +3,9 @@ set -e
 
 scriptname="swodig-config-wizard"
 echo "$scriptname: Updating packages..."
-yes | sudo pacman -Syu
+sudo pacman -Syu --noconfirm
 echo "$scriptname: Installing preferred packages..."
-yes | sudo pacman -S engrampa vim awesome nemo firefox xreader kitty zsh\
+sudo pacman -S --noconfirm engrampa vim awesome nemo firefox xreader kitty zsh\
   telegram-desktop element-desktop atom lxdm xscreensaver vlc
 echo "$scriptname: Installing ohmyzsh..."
 sh -c\
