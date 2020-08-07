@@ -16,7 +16,7 @@ apm install seti-ui seti-syntax script process-palette atom-ide-terminal\
   teletype
 
 echo "$scriptname: Copying awesomewm config..."
-cp -rf awesome/ "$1/.config"
+cp -rf awesome/ "$1/.config/awesome"
 echo "$scriptname: Copying vimrc..."
 cp vimrc "$1/.vimrc"
 echo "$scriptname: Copying torrc..."
