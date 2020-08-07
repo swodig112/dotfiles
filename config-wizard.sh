@@ -11,9 +11,10 @@ echo "$scriptname: Installing ohmyzsh..."
 sh -c\
   "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" && true
 echo "$scriptname: Installing atom editor packages..."
+pip install python-language-server
 apm install seti-ui seti-syntax script process-palette atom-ide-terminal\
   Hydrogen file-icons language-markdown markdown-scroll-sync markdown-writer\
-  teletype
+  teletype language-lua atom-ide-ui ide-python
 
 echo "$scriptname: Copying awesomewm config..."
 cp -rf awesome/ "$1/.config/awesome"
