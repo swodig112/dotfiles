@@ -17,3 +17,6 @@ git clone https://github.com/swodig112/dotfiles.git
 cd dotfiles
 ./config-wizard.sh /home/$USER
 ```
+
+## TODO
+- [ ] Support for non-sudoer users
