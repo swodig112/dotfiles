@@ -9,3 +9,11 @@ and people could use them so people don't spend their time on configs.
 ## Where do dotfiles come from?
 Originally They're from BlackArch's dotfiles, but I editted them themselves and
 I'm gonna merge BlackArch's and my own dotfiles. I'm gonna put the result here :)
+
+## Usage
+Just clone the repository and run config-wizard.sh:
+```
+git clone https://github.com/swodig112/dotfiles.git
+cd dotfiles
+./config-wizard.sh /home/$USER
+```
