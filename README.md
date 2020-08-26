@@ -15,7 +15,7 @@ Just clone the repository and run config-wizard.sh:
 ```
 git clone https://github.com/swodig112/dotfiles.git
 cd dotfiles
-./config-wizard.sh /home/$USER
+./config-wizard.sh $HOME
 ```
 
 ## TODO
