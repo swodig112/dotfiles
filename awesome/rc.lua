@@ -374,7 +374,7 @@ clientkeys = gears.table.join(
         {description = "(un)maximize horizontally", group = "client"}),
     -- Custom shortcuts
     -- Volume shortcuts
-    awful.key({}, "XF86AudioRaiseVolume",
+    awful.key({}, "XF86AudioLowerVolume",
     function ()
         awful.util.spawn("amixer -q -D pulse sset Master 5%-", false)
     end),
