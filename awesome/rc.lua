@@ -376,13 +376,13 @@ clientkeys = gears.table.join(
     -- Volume shortcuts
     awful.key({}, "XF86AudioLowerVolume",
     function ()
-        awful.util.spawn("amixer -q -D pulse sset Master 5%-", false)
+        awful.util.spawn("amixer sset Master 2%-", false)
     end),
     awful.key({}, "XF86AudioRaiseVolume", function ()
-        awful.util.spawn("amixer -q -D pulse sset Master 5%+", false)
+        awful.util.spawn("amixer sset Master 2%+", false)
     end),
     awful.key({}, "XF86AudioMute", function ()
-        awful.util.spawn("amixer -D pulse set Master 1+ toggle", false)
+        awful.util.spawn("amixer sset Master toggle", false)
     end),
     -- Lock screen
     awful.key({modkey}, "o",
