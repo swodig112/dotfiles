@@ -20,4 +20,4 @@ cd dotfiles
 
 ## TODO
 - [ ] Support for non-sudoer users
-- [ ] Move awesomewm configs to the official codebase
+- [x] Move awesomewm configs to the official codebase
