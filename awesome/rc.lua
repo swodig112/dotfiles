@@ -384,6 +384,11 @@ clientkeys = gears.table.join(
     awful.key({}, "XF86AudioMute", function ()
         awful.util.spawn("amixer -D pulse set Master 1+ toggle", false)
     end),
+    -- Lock screen
+    awful.key({modkey}, "o",
+    function ()
+        awful.util.spawn_with_shell('xscreensaver-command -lock', false)
+    end),
 )
 
 -- Bind all key numbers to tags.
