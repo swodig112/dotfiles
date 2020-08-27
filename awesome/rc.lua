@@ -371,7 +371,19 @@ clientkeys = gears.table.join(
             c.maximized_horizontal = not c.maximized_horizontal
             c:raise()
         end ,
-        {description = "(un)maximize horizontally", group = "client"})
+        {description = "(un)maximize horizontally", group = "client"}),
+    -- Custom shortcuts
+    -- Volume shortcuts
+    awful.key({}, "XF86AudioRaiseVolume",
+    function ()
+        awful.util.spawn("amixer -q -D pulse sset Master 5%-", false)
+    end),
+    awful.key({}, "XF86AudioRaiseVolume", function ()
+        wful.util.spawn("amixer -q -D pulse sset Master 5%+", false)
+    end),
+    awful.key({}, "XF86AudioMute", function ()
+        awful.util.spawn("amixer -D pulse set Master 1+ toggle", false)
+    end),
 )
 
 -- Bind all key numbers to tags.
