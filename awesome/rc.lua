@@ -389,6 +389,15 @@ clientkeys = gears.table.join(
     function ()
         awful.util.spawn_with_shell('xscreensaver-command -lock', false)
     end),
+    -- Screenshot
+    awful.key({}, "Print",
+    function ()
+        awful.util.spawn_with_shell("import -window root /home/swodig/Pictures/Screenshots/Screenshot$(date +%F%H:%M:%S).png", false)
+    end),
+    awful.key({modkey}, "Print",
+    function ()
+        awful.util.spawn_with_shell("import /home/swodig/Pictures/Screenshots/Screenshot$(date +%F%H:%M:%S).png", false)
+    end)
 )
 
 -- Bind all key numbers to tags.
