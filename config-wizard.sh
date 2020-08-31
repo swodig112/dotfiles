@@ -19,9 +19,9 @@ apm install seti-ui seti-syntax script process-palette atom-ide-terminal\
 echo "$scriptname: Copying awesomewm config..."
 cp -rf awesome/ "$1/.config/awesome"
 echo "$scriptname: Copying vimrc..."
-cp vimrc "$1/.vimrc"
+cp configurations/vimrc "$1/.vimrc"
 echo "$scriptname: Copying torrc..."
-sudo cp torrc /etc/tor/torrc
+sudo cp configurations/torrc /etc/tor/torrc
 
 echo "$scriptname: Installing ohmyzsh..."
 sh -c\
