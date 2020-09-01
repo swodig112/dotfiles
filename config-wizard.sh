@@ -6,7 +6,7 @@ echo "$scriptname: Updating packages..."
 sudo pacman -Syu
 echo "$scriptname: Installing preferred packages..."
 sudo pacman -S --needed engrampa vim awesome nemo firefox xreader\
-  kitty zsh telegram-desktop element-desktop atom lxdm xscreensaver vlc tor\
+  kitty zsh telegram-desktop element-desktop atom lxdm vlc tor\
   nomacs obs-studio gimp inkscape uget deluge-gtk signal-desktop
 echo "$scriptname: Installing the-glorious-dotfiles"
 yay -S the-glorious-dotfiles
