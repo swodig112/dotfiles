@@ -7,7 +7,8 @@ sudo pacman -Syu
 echo "$scriptname: Installing preferred packages..."
 sudo pacman -S --needed engrampa vim awesome nemo firefox xreader\
   kitty zsh telegram-desktop element-desktop atom lxdm vlc tor\
-  nomacs obs-studio gimp inkscape uget deluge-gtk signal-desktop
+  nomacs obs-studio gimp inkscape uget deluge-gtk signal-desktop\
+  noto-fonts noto-fonts-cjk ttf-dejavu ttf-liberation
 echo "$scriptname: Installing the-glorious-dotfiles"
 yay -S the-glorious-dotfiles
 echo "$scriptname: Installing atom editor packages..."
